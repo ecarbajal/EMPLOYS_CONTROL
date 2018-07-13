@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" pickOnBounds="false" prefHeight="532.0" prefWidth="657.0" stylesheets="@css/Main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employs_control.controller.MainController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <ImageView fitHeight="97.0" fitWidth="126.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/usuario.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="153.0" layoutY="26.0" text="Clave:" />
+      <Label layoutX="309.0" layoutY="26.0" text="Contraseña:" />
+      <TextField fx:id="txtClave" layoutX="201.0" layoutY="24.0" prefHeight="25.0" prefWidth="77.0" />
+      <PasswordField fx:id="txtContrasenia" layoutX="390.0" layoutY="24.0" prefHeight="25.0" prefWidth="97.0" />
+      <Button layoutX="525.0" layoutY="19.0" mnemonicParsing="false" onAction="#registrarAcceso" prefHeight="35.0" prefWidth="83.0" text="Validar" />
+      <TableView fx:id="tblAccesos" layoutX="7.0" layoutY="135.0" prefHeight="393.0" prefWidth="649.0">
+        <columns>
+          <TableColumn fx:id="clES" prefWidth="66.0" style="font-size: larger;" text="E/S" />
+            <TableColumn fx:id="clNombre" prefWidth="330.0" text="NOMBRE" />
+            <TableColumn fx:id="clHora" prefWidth="73.0" text="HORA" />
+            <TableColumn fx:id="clNotas" prefWidth="166.0" text="NOTAS" />
+        </columns>
+      </TableView>
+      <Label fx:id="lblFecha" layoutX="153.0" layoutY="86.0" prefHeight="17.0" prefWidth="264.0" text="Miércoles 11 de julio del 2018" />
+      <Label fx:id="lblHora" layoutX="153.0" layoutY="60.0" prefHeight="21.0" prefWidth="264.0" text="09:13 am" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNombre" layoutX="10.0" layoutY="112.0" prefHeight="17.0" prefWidth="549.0" />
+    </children>
+</AnchorPane>
